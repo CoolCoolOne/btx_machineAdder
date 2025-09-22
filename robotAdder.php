@@ -10,6 +10,11 @@ if (CUser::IsAuthorized()) {
 	$newsIDs = array(
 		"pb2" => "634",
 		// "dconst_crb" => "414",
+		// "pav_crb" => "874",
+		// "gp31" => "349",
+		// "serg-crb" => "115",
+		// "kantub" => "762",
+		// "dgp1" => "746",
 	);
 
 	$newName = "Тест";
