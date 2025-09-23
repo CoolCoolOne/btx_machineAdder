@@ -15,6 +15,13 @@ if (CUser::IsAuthorized()) {
 		// "serg-crb" => "115",
 		// "kantub" => "762",
 		// "dgp1" => "746",
+		// "dib8" => "682",
+		// "crbbog" => "538",
+		// "crb-sosn" => "1022",
+		// "vetluga-crb" => "401",
+		// "https://dgp18.mznn.ru/" => "375",
+		// "https://cozsir.mznn.ru/" => "1039",
+		// "https://gorodec-crb.mznn.ru/" => "890",
 	);
 
 	$newName = "Тест";
