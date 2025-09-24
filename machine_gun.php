@@ -22,11 +22,18 @@ if (CUser::IsAuthorized()) {
 		// "https://dgp18.mznn.ru/" => "375",
 		// "https://cozsir.mznn.ru/" => "1039",
 		// "https://gorodec-crb.mznn.ru/" => "890",
+		// "https://cmp.mznn.ru/" => "698",
+		// "https://dgb25.mznn.ru/" => "714",
+		// "https://gp21.mznn.ru/" => "271",
+		// "https://gp7.mznn.ru/" => "1146",
 	);
 
 	$newName = "Тест";
+	// используй новый уникальный codeUNIC
 	$codeUNIC = "test_by_robot12";
 	$newAnounce = "Анонс";
+	$newPic = $_SERVER["DOCUMENT_ROOT"]."/images/ds2.jpg";
+	// используй \ для экранирования кавычек
 	$newDetail = "
 <div class=\"galery-wrapper\">
               <a href=\"/upload/iblock/070/070fe18913ac2c6f1a2d4cfc4de783ac.jpg\" data-fancybox=\"group\" data-action=\"fancybox\">
@@ -37,7 +44,7 @@ if (CUser::IsAuthorized()) {
           </a>
 </div>
 	";
-	$newPic = $_SERVER["DOCUMENT_ROOT"]."/images/ds2.jpg";
+	
 
 
 
