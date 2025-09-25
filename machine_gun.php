@@ -26,6 +26,23 @@ if (CUser::IsAuthorized()) {
 		// "https://dgb25.mznn.ru/" => "714",
 		// "https://gp21.mznn.ru/" => "271",
 		// "https://gp7.mznn.ru/" => "1146",
+		// "https://pilna-crb.mznn.ru/" => "479",
+		// "https://rod-dom4.mznn.ru/" => "730",
+		// "https://gb37.mznn.ru/" => "323",
+		// "https://gkb34.mznn.ru/" => "602",
+		// "name" => "id",
+		// "name" => "id",
+		// "name" => "id",
+		// "name" => "id",
+		// "name" => "id",
+		// "name" => "id",
+		// "name" => "id",
+		// "name" => "id",
+		// "name" => "id",
+		// "name" => "id",
+		// "name" => "id",
+		// "name" => "id",
+		// "name" => "id",
 	);
 
 	$newName = "Тест";
