@@ -13,7 +13,7 @@ if (CUser::IsAuthorized()) {
 		// "pav_crb" => "874",
 		// "gp31" => "349",
 		// "serg-crb" => "115",
-		// "kantub" => "762",
+		// "https://kantub.mznn.ru/" => "762",
 		// "dgp1" => "746",
 		// "dib8" => "682",
 		// "crbbog" => "538",
@@ -30,7 +30,7 @@ if (CUser::IsAuthorized()) {
 		// "https://rod-dom4.mznn.ru/" => "730",
 		// "https://gb37.mznn.ru/" => "323",
 		// "https://gkb34.mznn.ru/" => "602",
-		// "name" => "id",
+		// "https://dzer-pnd.mznn.ru/" => "297",
 		// "name" => "id",
 		// "name" => "id",
 		// "name" => "id",
@@ -45,11 +45,11 @@ if (CUser::IsAuthorized()) {
 		// "name" => "id",
 	);
 
-	$newName = "Тест";
+	$newName = "Название";
 	// используй новый уникальный codeUNIC
-	$codeUNIC = "test_by_robot12";
+	$codeUNIC = "test_by_robot13";
 	$newAnounce = "Анонс";
-	$newPic = $_SERVER["DOCUMENT_ROOT"]."/images/ds2.jpg";
+	$newPic = $_SERVER["DOCUMENT_ROOT"] . "/adder/test.jpg";
 	// используй \ для экранирования кавычек
 	$newDetail = "
 <div class=\"galery-wrapper\">
@@ -61,9 +61,10 @@ if (CUser::IsAuthorized()) {
           </a>
 </div>
 	";
-	
 
-
+echo "Id новых элементов и ошибки будут залогированы в /adder/log.txt <br><hr>";
+$filename = $_SERVER["DOCUMENT_ROOT"] . '/adder/log.txt';
+file_put_contents($filename, PHP_EOL . ConvertTimeStamp(time()), FILE_APPEND);
 
 	foreach ($newsIDs as $mo_name => $id) {
 		echo "МО: $mo_name => ID инфоблока: $id\n";
@@ -84,18 +85,25 @@ if (CUser::IsAuthorized()) {
 				"PREVIEW_TEXT" => $newAnounce,
 				"DETAIL_TEXT" => $newDetail,
 				"DETAIL_TEXT_TYPE" => "html",
-				"PREVIEW_PICTURE"   => CFile::MakeFileArray($newPic),
+				"PREVIEW_PICTURE" => CFile::MakeFileArray($newPic),
 			);
 
 			echo "<br>";
 			if ($PRODUCT_ID = $el->Add($arLoadProductArray)) {
 				echo "УСПЕШНО New ID: " . $PRODUCT_ID;
+
+				$new_str = $mo_name .'->'. $PRODUCT_ID;
+				file_put_contents($filename, PHP_EOL . $new_str, FILE_APPEND);
+
 			} else {
 				echo "Error: " . $el->LAST_ERROR;
 				echo "ОШИБКА";
 				echo "<hr>";
+				$new_str = $mo_name .'->'. $el->LAST_ERROR;
+				file_put_contents($filename, PHP_EOL . $new_str, FILE_APPEND);
 			}
 			echo "<br>";
+
 
 
 		endif;
