@@ -34,7 +34,7 @@ if (CUser::IsAuthorized()) {
 		// "https://dgp48.mznn.ru/" => "310",
 		// "https://semashko.nnov.ru/" => "199",
 		// "ardatov" => "970",
-		// "name" => "id",
+		// "https://bboldino-crb.mznn.ru/" => "586",
 		// "name" => "id",
 		// "name" => "id",
 		// "name" => "id",
