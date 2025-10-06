@@ -35,7 +35,7 @@ if (CUser::IsAuthorized()) {
 		// "https://semashko.nnov.ru/" => "199",
 		// "ardatov" => "970",
 		// "https://bboldino-crb.mznn.ru/" => "586",
-		// "name" => "id",
+		// "https://gb24.mznn.ru/" => "336",
 		// "name" => "id",
 		// "name" => "id",
 		// "name" => "id",
