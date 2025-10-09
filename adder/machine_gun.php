@@ -41,8 +41,9 @@ if (CUser::IsAuthorized()) {
 		// "https://kiseliha-gvv.mznn.ru/" => "522",
 		// "https://nokptd.mznn.ru/" => "810",
 		// "https://sud-med.mznn.ru/" => "666",
-		// "name" => "id",
-		// "name" => "id",
+		// "https://lukoyanov-crb.mznn.ru/" => "466",
+		// "http://kpb.nnov.ru/" => "650",
+		// "gkb7 berezow" => "1164",
 	);
 
 	$newName = "Онлайн-опрос граждан в целях оценки уровня «Бытовой» коррупции";
